@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="JS/jquery-3.2.1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-Shirt Designer</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body onLoad="loadPhotos()" style="background:rgb(159, 8, 8);">
+    <ul class="navbar">
+  		<li><a class="active" href="index.html">Home</a></li>
+  		<li><a href="Tour.html">Tour</a></li>
+  		<li><a href="Music.html">Music</a></li>
+  		<li><a href="T-shirt_designer.html">T-Shirt Designer</a></li>
+        <li><a href="Media.html">Media</a></li>
+        <li><a href="Report.html">Report</a></li>
+        <li><a href="Demo.html">Demo</a></li>
+	</ul>
+    <img id="HeaderImage" src="Assets/Picture1.jpg" alt="Logo">
+    <div class="imgContainer">
+    <button class="imgButton" id="imgBtn1" onClick="displayImg(this.id)" style="background-image:url(Assets/logo%20for%20website.jpeg)"></button>
+    <button class="imgButton" id="imgBtn2" onClick="displayImg(this.id)" style="background-image:url(Assets/Shirt%20image.jpg)"></button>
+    <button class="imgButton" id="imgBtn3" onClick="displayImg(this.id)" style="background-image:url(Assets/circle.png)"></button>
+    
+    
+    <button class="storageBtn" id="saveBtn" onClick="saveImg()" style="width:100px; height:75px; float:right;;">save</button>
+    <button class="storageBtn" id="loadBtn" onClick="loadImg()" style="width:100px; height:75px; float:right;">load</button>
+    <div class="testdiv" id="clicker">
+    
+
+    
+
+    	<img id="img1" class="shirtImg" onMouseDown="choose(this)" src="Assets/Picture1.jpg" style="position: absolute" alt="IMAGE"><script src="JS/JS.js"></script>
+        <img id="img2" class="shirtImg" onMouseDown="choose(this)" src="Assets/Shirt image.jpg" style="position: absolute; margin-left:100px;" alt="IMAGE"><script src="JS/JS.js"></script>
+        <img id="img3" class="shirtImg" onMouseDown="choose(this)" src="Assets/circle.png" style="position: absolute; margin-left:100px; border-radius:150px;" alt="IMAGE"><script src="JS/JS.js"></script>
+        
+        <canvas id="myCanvas" style="border:2px solid black; background-image:url(Assets/T-Shirt.jpg); background-size:100%;background-repeat:no-repeat;" width="494" height="481">
+		</canvas> 
+    </div>
+    </div>
+    
+    
+    
+    
+
+
+</body>
+</html>
